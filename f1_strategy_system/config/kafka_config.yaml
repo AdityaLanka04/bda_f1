@@ -1,0 +1,15 @@
+bootstrap_servers: "localhost:9092"
+clients:
+  ingestion: "f1_ingestion"
+  preprocessing: "f1_preprocessing"
+  streaming: "f1_streaming"
+
+topics:
+  lap_events: "lap_events"
+  telemetry: "telemetry"
+  pit_events: "pit_events"
+  safety_car: "safety_car"
+
+streaming:
+  group_id: "streaming_pipeline"
+  batch_size: 50

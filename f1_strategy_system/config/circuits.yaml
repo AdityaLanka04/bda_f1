@@ -1,0 +1,12 @@
+# Minimal circuit configuration
+bahrain:
+  laps: 57
+  drs_zones: 3
+  pit_lane_delta_sec: 22.5
+  preferred_compounds: [soft, medium]
+
+monza:
+  laps: 53
+  drs_zones: 2
+  pit_lane_delta_sec: 23.0
+  preferred_compounds: [medium, hard]

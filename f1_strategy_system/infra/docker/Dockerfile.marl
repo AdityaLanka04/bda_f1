@@ -1,0 +1,6 @@
+FROM python:3.10-slim
+WORKDIR /app
+COPY requirements.txt /app/requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+COPY marl_simulator /app/marl_simulator
+ENTRYPOINT ["python", "-m", "marl_simulator.train_marl"]

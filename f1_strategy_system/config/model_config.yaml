@@ -1,0 +1,16 @@
+fcsg:
+  max_edges: 30
+  alpha: 0.05
+  use_fci: false
+
+abpwo:
+  gp:
+    kernel: "matern52"
+    noise: 1.0e-3
+  acquisition: "expected_improvement"
+
+marl:
+  algo: "ppo"
+  gamma: 0.99
+  horizon: 80
+  curriculum_stages: [2, 5, 10, 20]
